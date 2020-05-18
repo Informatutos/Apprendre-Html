@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les Tableaux en Html</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Colspan
+        rowspan
+        id="web"
+        header="web"
+        scope
+        colgroup
+         <colgroup>
+            <col width="200">
+            <col width="50">
+            <col width="400">
+        </colgroup>
+    -->
+    <h3>Les Tableaux en Html</h3>
+
+    <table summary =" Ce tableau affiche les languages de programmation selon leurs domaines....." >
+        <caption>Programmation</caption>
+        <thead>
+            <tr>
+                <th>Web</th>
+                <th>Logiciel</th>
+                <th>App</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Php</td>
+                <td>C++</td>
+                <td>Python</td>
+    
+            </tr>
+            <tr>
+                <td header="web">Ruby</td>
+                <td>C#</td>
+                <td>Go</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    End Programmation
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
